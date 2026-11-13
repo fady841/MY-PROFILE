@@ -1,0 +1,72 @@
+body {
+    background-color: black;
+    margin: 0;
+}
+
+/* النافبار */
+nav .container-fluid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* توسيط الكارت */
+.page-content {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+/* الكارت */
+.profile-card {
+    width: 18rem;
+    background-color: rgba(0, 128, 0, 0.347);
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.profile-card:hover {
+    transform: translateY(-5px);   /* حركة خفيفة بدل التكبير الكبير */
+}
+
+/* الصورة والـ overlay */
+.img-wrap {
+    position: relative;
+}
+
+.img-wrap img {
+    width: 100%;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.profile-card:hover .overlay,
+.profile-card:focus-within .overlay {
+    opacity: 1;
+}
+
+.overlay a {
+    color: #fff;
+    font-size: 2rem;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.overlay a:hover {
+    transform: scale(1.25);
+    color: #0d6efd;
+}

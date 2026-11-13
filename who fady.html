@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>who?</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+</head>
+<body>
+    <nav>
+   <button class="bt1 " type="button" class="btn-outline theme-success" onclick="light()">darkmod</button>
+    </nav>
+  <section class="about container" id="about">
+    <h2 class="section-title">Who is <span>Fady?</span></h2>
+
+    <div class="about-box">
+        <p>
+            I'm a Full-Stack Web Developer with a strong focus on back-end development.
+            I graduated from the <strong>Information Technology Institute (ITI)</strong>,
+            where I completed an intensive back-end track and built real-world projects
+            in a team environment.
+        </p>
+        <p>
+            I enjoy designing clean REST APIs, structuring databases, and building
+            responsive interfaces that connect smoothly to the server side.
+        </p>
+
+        <h5 class="skills-title">Tech Stack</h5>
+
+        <div class="skills">
+            <span class="skill"><i class="bi bi-filetype-html"></i> HTML</span>
+            <span class="skill"><i class="bi bi-filetype-css"></i> CSS</span>
+            <span class="skill"><i class="bi bi-bootstrap"></i> Bootstrap</span>
+            <span class="skill"><i class="bi bi-filetype-js"></i> JavaScript</span>
+            <span class="skill"><i class="bi bi-hexagon"></i> Node.js</span>
+            <span class="skill"><i class="bi bi-server"></i> Express</span>
+            <span class="skill"><i class="bi bi-database"></i> MongoDB</span>
+            <span class="skill"><i class="bi bi-database-fill"></i> SQL Server</span>
+        </div>
+
+        <div class="education">
+            <i class="bi bi-mortarboard-fill"></i>
+            <div>
+                <strong>ITI - Back-End Track</strong>
+                <small>Information Technology Institute</small>
+            </div>
+        </div>
+    </div>
+</section>
+    
+<style>
+    .about {
+    max-width: 800px;
+    margin: 60px auto;
+    color: white;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-title span {
+    color: #2ecc71;
+}
+
+.about-box {
+    background-color: rgba(0, 128, 0, 0.347);
+    border-radius: 12px;
+    padding: 30px;
+    line-height: 1.8;
+}
+
+.skills-title {
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill {
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-size: 0.95rem;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.skill:hover {
+    transform: translateY(-3px);
+    background: rgba(46, 204, 113, 0.35);
+}
+
+.skill i {
+    margin-right: 6px;
+}
+
+.education {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.education i {
+    font-size: 2rem;
+    color: #2ecc71;
+}
+
+.education small {
+    display: block;
+    opacity: 0.75;
+}
+</style>
+<script src="./doc.js"></script>
+</body>
+</html>
